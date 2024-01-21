@@ -6,3 +6,4 @@ This assignment is about recreating Figma e-shop design using html/css. Goal was
 <h4>🔹 "Sneaker" e-shop sample - <a href="https://simonakom.github.io/sneaker-eshop-page/sneaker.html" style="font-size:small;">View</a><h4>
 
 
+

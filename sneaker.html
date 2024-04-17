@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="box">
@@ -16,25 +17,45 @@
             <div class="logo">
                 <div>Sneaker<span>.</span></div>
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Products</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                    <li>Elements</li>
-                </ul>
-            </nav>
-           <div class="icon">
-                <ul>
-                    <img src="./pictures/search.png" alt="search">
-                    <img src="./pictures/acc.png" alt="login">
-                    <img src="./pictures/heart.png" alt="wishlish">
-                    <img src="./pictures/bag.png" alt="bag">
-                </ul>
-            </div>
+            <div class="navigation">  
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>Products</li>
+                        <li>Pages</li>
+                        <li>Blog</li>
+                        <li>Elements</li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <img src="./pictures/search.png" alt="search">
+                        <img src="./pictures/acc.png" alt="login">
+                        <img src="./pictures/heart.png" alt="wishlish">
+                        <img src="./pictures/bag.png" alt="bag">
+                    </ul>
+                </div>
+            </div>  
         </header>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Products</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="#">Elements</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+
+
         <section>   
             <div class="left">
                 <img src="./pictures/left.png" alt="left">
@@ -59,6 +80,7 @@
             </div>
         </footer>
     </div>
+    <script src="sneaker.js"></script>
 </body>
 </html>
 

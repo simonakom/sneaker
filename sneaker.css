@@ -5,9 +5,12 @@ body{
 }
 /* White Block */
 /* Header */
+.topnav {
+    display: none;
+}
 .box{
     position: relative;
-    background-color: var(--shade-background, #F9F9F9);
+    background-color: #F9F9F9;
     max-width: 1440px;
     min-height: 780px;
     width: 95%;
@@ -17,8 +20,10 @@ body{
 }
 header {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navigation {
+    display: flex;
 }
 .logo div{
     color: #111111;
@@ -30,7 +35,10 @@ header {
 .logo span{
     color:#C8815F;
 }
-.navigation ul{
+.menu {
+    margin-right: 50px;
+}
+.menu ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -40,14 +48,14 @@ header {
     font-family: 'Jost', sans-serif;
     font-size: 17px;
 }
-.navigation ul li:hover {
+.menu ul li:hover {
     color:rgb(126, 13, 83);
     font-size: 17px;
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
 }
-.icon ul{
+.icons ul{
     display: flex;
     justify-content: center;
     flex-direction:row;
@@ -56,14 +64,45 @@ header {
     list-style:none;
     margin-right: 100px;
 }
-.icon img:hover {
+.icons img:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
     }
-p {
-    margin-bottom: 30px;
-}
+
+/* Top Navigation Menu */
+.topnav {
+    background-color: #dedbdb;
+    position: relative;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+    .topnav #myLinks {
+    display: none;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .topnav a {
+    color: rgb(114, 112, 112);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  .topnav a.icon {
+    background-color: #dedbdb;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: #f0ecec;
+    border-radius: 20px;
+    color: rgb(37, 37, 37);
+  }
+
+    
 /* Middle */
 .right{
     float: right;
@@ -147,5 +186,35 @@ footer{
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
     box-shadow: 0 0 0 10px #b9c0c5; 
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .menu {
+        display: none;
+    }
+    .topnav {
+        display: block;
+        margin-left: 100px;
+    }
+    .icons ul {
+        gap: 10px;
+    }
+    header {
+        justify-content:left;
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .icons {
+        margin-left: 60px;
+    }
+    .topnav {
+        display: block;
+        margin-left: 150px;
+    }
 }
 

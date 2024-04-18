@@ -80,7 +80,7 @@ header {
 .topnav #myLinks {
     display: none;
     margin-top: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .topnav a {
     color: rgb(114, 112, 112);
@@ -102,7 +102,7 @@ header {
     color: rgb(37, 37, 37);
 }
 .active {
-    background-color: #F9F9F9;;
+    background-color: #F9F9F9 !important;
     color: white;
 }
 /* Middle */
@@ -233,7 +233,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 956px) {
+@media screen and (max-width: 990px) {
     .title  {
         text-align: center;
         position: relative;

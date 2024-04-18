@@ -1,7 +1,6 @@
+# <span><img src="./pictures/shoe.png" alt=Sneaker style="height: 1em; vertical-align: middle;"></span>  "Sneaker" e-shop page
 
-# "Sneaker" e-shop page
-
-This assignment is about recreating Figma e-shop design using html/css. Goal was to create html site simmilar to <a href="https://www.figma.com/community/file/1282989996438463973">View</a><h4>
+This assignment is about recreating responsive <a href="https://www.figma.com/community/file/1282989996438463973" style="font-size:small;">Figma</a> design of e-shop landing page using html/css.
 
 <h4>🔹 "Sneaker" e-shop sample - <a href="https://simonakom.github.io/sneaker-eshop-page/sneaker.html" style="font-size:small;">View</a><h4>
 

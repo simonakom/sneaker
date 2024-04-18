@@ -1,15 +1,13 @@
-/* Purple Bacground */
 body{
     background: url(./pictures/bg.png) no-repeat center center / cover;
     margin: 0;
 }
-/* White Block */
 /* Header */
 .topnav {
     display: none;
 }
-.box{
-    position: relative;
+.box {
+    /* position: relative; */
     background-color: #F9F9F9;
     max-width: 1440px;
     min-height: 780px;
@@ -17,6 +15,7 @@ body{
     margin: 100px auto;
     padding-top: 30px;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.30); 
+    overflow-y: hidden;
 }
 header {
     display: flex;
@@ -25,37 +24,39 @@ header {
 .navigation {
     display: flex;
 }
-.logo div{
+.logo div {
     color: #111111;
     font-size: 36px;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
     margin-left: 100px;
+    cursor: default;
 }
-.logo span{
+.logo span {
     color:#C8815F;
 }
 .menu {
     margin-right: 50px;
 }
-.menu ul{
+.menu ul {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 35px;
     list-style: none;
     font-family: 'Jost', sans-serif;
     font-size: 17px;
+    cursor: pointer;
 }
 .menu ul li:hover {
-    color:rgb(126, 13, 83);
+    color:#c174c3;
     font-size: 17px;
-    transform: scale(1.2);
+    transform: scale(1.09);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
 }
-.icons ul{
+.icons ul {
     display: flex;
     justify-content: center;
     flex-direction:row;
@@ -63,100 +64,106 @@ header {
     gap: 35px;
     list-style:none;
     margin-right: 100px;
+    cursor: pointer;
 }
 .icons img:hover {
-    transform: scale(1.2);
+    transform: scale(1.09);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
-    }
-
+}
 /* Top Navigation Menu */
 .topnav {
     background-color: #dedbdb;
     position: relative;
     border-radius: 20px;
     margin-right: 30px;
-  }
-    .topnav #myLinks {
+}
+.topnav #myLinks {
     display: none;
     margin-top: 10px;
     padding-top: 50px;
-  }
-  .topnav a {
+}
+.topnav a {
     color: rgb(114, 112, 112);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
     display: block;
-  }
-  .topnav a.icon {
+}
+.topnav a.icon {
     background-color: #dedbdb;
     border-radius: 10px;
     display: block;
     position: absolute;
     top: 0;
-  }
-  .topnav a:hover {
+}
+.topnav a:hover {
     background-color: #f0ecec;
     border-radius: 20px;
     color: rgb(37, 37, 37);
-  }
-
+}
+.active {
+    background-color: #F9F9F9;;
+    color: white;
+}
     
 /* Middle */
-.right{
+.right {
     float: right;
     margin-top: 340px;
     padding-right:50px;
+    cursor: pointer;
+}
+.left {
+    float: left;
+    margin-top: 340px;
+    padding-left:50px;
+    cursor: pointer;
 }
 .right img:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
 }
-.left{
-    margin-top: 340px;
-    position:absolute;
-    padding-left:50px;
-}
 .left img:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
 }
-.title{
+.title {
     position: absolute;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-left: 10%;
     font-family:'Jost', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 50px;
     line-height: 60px;
 }
-.title span{
+.title span {
     font-size: 17px;
+    font-weight: 500;
 }
-button{
+.title button {
     background:none;
     font-family:'Jost', sans-serif;
     font-size: 16px;
     border: 1px solid #111111;
     padding: 9px 32px 12px 32px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .title button:hover {
     color:rgb(126, 13, 83);
-    font-size: 17px;
-    transform: scale(1.2);
+    transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
     opacity: 0.8;
-    }
+}
 .nike{
     margin-left: 30%;
 }
 .nike img{
-    width: 80%;
-    padding-left: 70px;
+    width: 62%;
+    margin-left: 18%;
 }
 /* Footer */
 footer img:hover {
@@ -170,8 +177,8 @@ footer{
 }
 .dots {
     display: flex;
-    gap:50px;
-    padding-top:20px;
+    gap: 50px;
+    padding-top:60px;
 }
 .dot1  {
     width: 7px;
@@ -188,7 +195,6 @@ footer{
     box-shadow: 0 0 0 10px #b9c0c5; 
 }
 
-
 @media only screen and (max-width: 1150px) {
     .menu {
         display: none;
@@ -203,18 +209,110 @@ footer{
     header {
         justify-content:left;
     }
+    p, button {
+        margin-left: 40px;
+    }
+    .title {
+        margin-top: 7%;
+        margin-left: 13%;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .title span {
+        font-size: 17px;
+    }
+    .nike img{
+        width: 50%;
+        margin-left: 30%;
+        margin-top: 50px;
+    }
+    .dots {
+        padding-top:170px;
+    }
+    .right, .left {
+        margin-top: 300px;
+    }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 956px) {
+    .title  {
+        text-align: center;
+        position: relative;
+    }
+    .title p{
+       margin-left: -70px;
+       margin-right: 70px;
+    }
+    .title span {
+        font-size: 20px;
+    }
+    .title button {
+        font-size: 20px;
+        margin-top: -40px;
+        margin-left: -20px;
+    }
+    .nike {
+        text-align: center;
+    }
+    .nike img {
+        width: 80%; 
+        margin-left: -20%;
+    }
+    .right {
+        margin-top: -15px;
+    }
+    .dots {
+        margin-bottom: 80px;
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
     header {
         display: flex;
         flex-direction: column;
     }
-    .icons {
-        margin-left: 60px;
+    .logo div {
+        margin-left: 40px;
+    }
+    .icons ul {
+        margin-left: 0px;
     }
     .topnav {
-        display: block;
-        margin-left: 150px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+    .title span {
+        font-size: 15px;
+    }
+    .title button {
+        font-size: 20px;
+        margin-top: -40px;
+        margin-left: -70px;
+    }
+    .left{
+        margin-top: 230px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .left, .right{
+        display: none;
+    }
+    .title p {
+      margin-left: 30px;
+    }
+    .title button {
+        margin-left: -20px !important;
+    }
+    .nike img {
+        width: 80%; 
+        margin-left: -50%;
+    }
+}

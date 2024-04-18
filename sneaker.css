@@ -7,7 +7,6 @@ body{
     display: none;
 }
 .box {
-    /* position: relative; */
     background-color: #F9F9F9;
     max-width: 1440px;
     min-height: 780px;
@@ -106,7 +105,6 @@ header {
     background-color: #F9F9F9;;
     color: white;
 }
-    
 /* Middle */
 .right {
     float: right;
@@ -179,6 +177,7 @@ footer{
     display: flex;
     gap: 50px;
     padding-top:60px;
+    cursor: pointer;
 }
 .dot1  {
     width: 7px;

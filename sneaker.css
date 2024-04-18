@@ -9,7 +9,7 @@ body{
 .box {
     background-color: #F9F9F9;
     max-width: 1440px;
-    min-height: 780px;
+    min-height: auto;
     width: 95%;
     margin: 100px auto;
     padding-top: 30px;
@@ -131,7 +131,7 @@ header {
 .title {
     position: absolute;
     margin-top: 2%;
-    margin-left: 13%;
+    margin-left: 10%;
     font-family:'Jost', sans-serif;
     font-weight: 600;
     font-size: 50px;
@@ -178,6 +178,7 @@ footer{
     gap: 50px;
     padding-top:60px;
     cursor: pointer;
+    margin-bottom: 60px;
 }
 .dot1  {
     width: 7px;
@@ -194,7 +195,7 @@ footer{
     box-shadow: 0 0 0 10px #b9c0c5; 
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
     .menu {
         display: none;
     }
@@ -248,7 +249,7 @@ footer{
     .title button {
         font-size: 20px;
         margin-top: -40px;
-        margin-left: -20px;
+        margin-left: -100px;
     }
     .nike {
         text-align: center;
@@ -258,7 +259,7 @@ footer{
         margin-left: -20%;
     }
     .right {
-        margin-top: -15px;
+        margin-top: -18px;
     }
     .dots {
         margin-bottom: 80px;
@@ -267,7 +268,7 @@ footer{
 }
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 560px) {
     header {
         display: flex;
         flex-direction: column;
@@ -308,7 +309,7 @@ footer{
       margin-left: 30px;
     }
     .title button {
-        margin-left: -20px !important;
+        margin-left: -30px !important;
     }
     .nike img {
         width: 80%; 
